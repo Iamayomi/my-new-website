@@ -5,15 +5,135 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
+
 #product-overview {
-	background: #ff1b68;
+	background: url("desktop.jpeg");
 	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin-top: 4%;
 	height: 528px;
 	padding: 10px;
 }
 
 .section-title {
-	color: #2ddf5c;
+	color: #4462c5;
+	text-align: center;
+}
+
+.plan__list {
+	width: 80%;
+	margin: auto;
+}
+
+.plan {
+	background: #a1ffff;
+	text-align: center;
+	padding: 16px;
+	margin: 8px;
+	display: inline-block;
+	width: 30%;
+	vertical-align: middle;
+}
+
+.plan--highlighted {
+	background: #2419b8;
+	color: white;
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.plan__annotation {
+	background: white;
+	color: #3119b8;
+	padding: 8px;
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+	border-radius: 8px;
+}
+
+.plan__title {
+	color: #2d1eb6;
+}
+
+.plan__price {
+	color: #ffffff;
+}
+
+.plan--highlighted .plan__title {
+	color: white;
+}
+
+.plan--highlighted .plan__price {
+	color: #4462c5;
+}
+
+.plan__features {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.plan__feature {
+	margin: 8px 0;
+}
+
+.button {
+	background: #23d7e7;
+	color: white;
+	font: inherit;
+	border: 1.5px solid #23d7e7;
+	padding: 8px;
+	border-radius: 8px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+	background: white;
+	color: #23d7e7;
+}
+.button:focus {
+	outline: none;
+}
+
+#key-features {
+	background: #23d7e7;
+	margin-top: 80px;
+	padding: 16px;
+}
+
+#key-features .section-title {
+	color: white;
+	margin: 32px;
+}
+
+.key-feature__list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.key-feature {
+	display: inline-block;
+	width: 30%;
+	vertical-align: top;
+}
+
+.key-feature__image {
+	background: #bdb8db;
+	width: 128px;
+	height: 128px;
+	border: 2px solid #424242;
+	border-radius: 50%;
+	margin: auto;
+}
+
+.key-feature__description {
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	font-size: 20px;
 }
 
 #product-overview h1 {
@@ -23,17 +143,17 @@ body {
 
 .main-header {
 	width: 100%;
-	background: #2ddf5c;
-	padding: 8px 16px;
+	background: #3430ff;
+	padding: 16px 16px;
 }
 .main-header > div {
     display: inline-block;
 }
 
 .main-header__brand {
-	color: #0e4f1f;
+	color: black;
 	text-decoration: none;
-	font-weight: bold;
+	font-weight: bolder;
 }
 
 .main-nav {
@@ -55,10 +175,53 @@ body {
 
 .main-nav__item a {
 	text-decoration: none;
-	color: #0e4f1f;
+	color: #23d7e7;
+	font-weight: bold;
 }
 
 .main-nav__item a:hover,
 .main-nav__item a:active {
+	color:white;
+	border-bottom: 5px solid white;
+}
+.main-nav__item--cta a {
 	color: white;
+	background: #23d7e7;
+	padding: 8px 16px;
+	border-radius: 8px;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+	color: #23d7e7;
+	background: white;
+	border: none;
+}
+
+.main-footer {
+	background: #87a7ff;
+	padding: 32px;
+	margin-top: 48px;
+}
+
+.main-footer__links {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.main-footer__link a {
+	color: white;
+	text-decoration: none;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+    color: #f11919;
+}
+
+.main-footer__link {
+	display: inline-block;
+	margin: 0 16px;
 }
